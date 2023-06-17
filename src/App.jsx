@@ -1,17 +1,14 @@
 import './App.css'
-import NavBar from './components/NavBar/NavBar'
+import Header from './components/Header/Header'
+import Main from './components/Main/Main'
 
-function App() {
+export default function App() {
 
   return (
     <>
-      <header>
-        <NavBar />
-      </header>
-      <main></main>
+      <Header/>
+      <Main />
       <footer></footer>
     </>
   )
 }
-
-export default App

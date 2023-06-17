@@ -1,0 +1,67 @@
+.file-handler {
+    height: 70vh;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center
+}
+
+.main-copy {
+    padding: 0 2em 0 2em;
+    width: 50%;
+}
+
+.main-copy h1 {
+    font-size: 4em;
+    text-align: start;
+}
+
+.main-copy p {
+    font-size: 1.1em;
+    text-align: start;
+}
+
+.main-file-input {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.handler-status h2 {
+    font-size: 2.6em;
+}
+
+@media all and (max-width: 1000px) {
+    .file-handler {
+        flex-wrap: wrap;
+    }
+
+    .main-copy {
+        width: 100%;
+    }
+
+    .main-copy h1 {
+        text-align: center;
+    }
+
+    .main-copy p {
+        text-align: center;
+    }
+
+    .main-file-input {
+        width: 100%;
+    }
+
+}
+
+@media all and (max-width: 600px) {
+    .main-copy h1 {
+        font-size: 3em;
+        text-align: center;
+    }
+
+    .handler-status {
+        margin-block-start: 80px;
+    }
+}

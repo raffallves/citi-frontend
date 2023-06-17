@@ -1,0 +1,12 @@
+nav {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav p {
+    font-size: 1.1em;
+}
+
+nav a {
+    color: inherit;
+}

@@ -1,23 +1,31 @@
 import './Main.css'
 import DropFileInput from '../DropFileInput/DropFileInput'
 import ButtonInput from '../ButtonInput/ButtonInput'
+import Spinner from '../Spinner/Spinner'
+import Status from '../Status/Status'
+import Error from '../Error/Error'
+import Success from '../Success/Success'
 
 export default function Main() {
     return (
        <main data-testid='page-main'>
             <section className='file-handler'>
                 <div className='main-copy'>
-                    <h1>Valide Sua Remessa</h1>
-                    <p>É rápido e fácil! Escolha os arquivos a serem validados e tenha sua resposta em segundos.</p>
+                    <h1>Valide Suas Remessas PIX</h1>
+                    <p>É rápido e fácil! Escolha os arquivos a serem validados e tenha sua resposta em segundos. Todos os dados são processados no padrão CNAB 750.</p>
                 </div>
                 <div className='main-file-input'>
                     <DropFileInput />
                     <ButtonInput />
+                    {/* <Spinner/> */}
+                    {/* <Error /> */}
+                    {/* <Success/> */}
                 </div>
             </section>
             <section className='handler-status'>
-                <h2>Status</h2>
-                <p>O status de sua requisição aparecerá aqui.</p>
+                <h2>Retorno</h2>
+                <Status />
+                <button>Baixar Arquivos</button>
             </section>
        </main> 
     )

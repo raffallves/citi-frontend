@@ -1,0 +1,17 @@
+.table-wrapper {
+    width: 100%;
+}
+
+.table-wrapper thead {
+    background-color: #01245c;
+}
+
+.table-wrapper tbody {
+    background-color: #023c99;
+}
+
+@media all and (max-width: 600px) {
+    .table-wrapper tr td:first-child {
+        padding: 1em;
+    }
+}

@@ -1,0 +1,33 @@
+.accordion {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.accordion-info {
+    margin-left: 5px;
+}
+
+.accordion-info .product-info {
+    display: inline;
+    margin-left: 10px;
+}
+
+.accordion-info .product-info::before {
+    content: '|';
+    margin-right: 5px;
+}
+
+.accordion-info .product-info:nth-child(1) {
+    margin-left: 0px;
+}
+
+.accordion-info .product-info:nth-child(1)::before {
+    content: '';
+    margin-right: 0px;
+}
+
+.ver-mais-button {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}

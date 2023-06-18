@@ -1,0 +1,11 @@
+.table-wrapper {
+    width: 100%;
+}
+
+.table-wrapper thead {
+    background-color: #01245c;
+}
+
+.table-wrapper tbody {
+    background-color: #023c99;
+}

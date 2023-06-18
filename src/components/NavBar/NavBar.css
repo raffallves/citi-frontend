@@ -10,3 +10,7 @@ nav p {
 nav a {
     color: inherit;
 }
+
+nav a:hover, nav a:focus {
+    color: #c72424;
+}

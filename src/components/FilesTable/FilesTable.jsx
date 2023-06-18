@@ -1,8 +1,7 @@
-import './Validations.css'
+import './FilesTable.css'
 import { useRef } from 'react'
-import Accordion from '../Accordion/Accordion'
 
-export default function Validations() {
+export default function FilesTable() {
     const tableRef = useRef(null)
 
     // Seleciona todos os checkbox se o da header for selecionado
@@ -35,7 +34,7 @@ export default function Validations() {
                         <td>ISPB</td>
                         <td>CPF/CNPJ</td>
                         <td>Data de Geração</td>
-                        <td>Erros</td>
+                        <td>Rejeitada</td>
                     </tr>
                 </thead>
                 <tbody>
@@ -44,12 +43,11 @@ export default function Validations() {
                         <td>5151</td>
                         <td>5151</td>
                         <td>5151</td>
-                        <td>
-                            <Accordion/>
-                        </td>
+                        <td>5151</td>
                     </tr>
                 </tbody>
             </table>
+            <p>Sem dados.</p>
         </>
     )
 }

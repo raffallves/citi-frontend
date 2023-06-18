@@ -1,7 +1,7 @@
 import './FilesTable.css'
 import { useRef } from 'react'
 
-export default function FilesTable() {
+export default function FilesTable({ fileList }) {
     const tableRef = useRef(null)
 
     // Seleciona todos os checkbox se o da header for selecionado
@@ -19,6 +19,8 @@ export default function FilesTable() {
             }
         }
     }
+
+    if (fileList.length === 0) return <p>Sem dados.</p>
     return (
         <>
             <table className='table-wrapper' ref={tableRef}>
@@ -38,16 +40,31 @@ export default function FilesTable() {
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td><input type='checkbox'/></td>   
-                        <td>5151</td>
-                        <td>5151</td>
-                        <td>5151</td>
-                        <td>5151</td>
-                    </tr>
+                    {fileList.map((element, i) => {
+                        if (i === 0) {
+                            return (
+                                <tr>
+                                    <td><input type='checkbox'/></td>
+                                    <td>Bradesco</td>
+                                    <td>359.785.621-89</td>
+                                    <td>18/06/2023</td>
+                                    <td>Não</td>
+                                </tr>
+                            )
+                        } else {
+                            return (
+                                <tr>
+                                    <td><input type='checkbox'/></td>
+                                    <td>Santander</td>
+                                    <td>368.953.652-11</td>
+                                    <td>18/06/2023</td>
+                                    <td>Sim</td>
+                                </tr>
+                            )
+                        }
+                    })}
                 </tbody>
             </table>
-            <p>Sem dados.</p>
         </>
     )
 }

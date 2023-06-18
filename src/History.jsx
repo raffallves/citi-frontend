@@ -8,7 +8,7 @@ export default function History() {
             <main>
                 <h1>Histórico de Validações</h1>
                 <p>Nenhuma validação registrada.</p>
-                <Validations />
+                {/* <Validations /> */}
             </main>
         </>
     )

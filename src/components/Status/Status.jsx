@@ -2,7 +2,7 @@ import './Status.css'
 import { useState } from 'react'
 import FileTables from '../FilesTable/FilesTable'
 
-export default function Status() {
+export default function Status({ fileList }) {
     const [selection, setSelection] = useState([
         {
             id: 0,
@@ -13,7 +13,7 @@ export default function Status() {
 
     return (
         <>
-            <FileTables/>
+            <FileTables fileList={fileList}/>
         </>
     )
 }

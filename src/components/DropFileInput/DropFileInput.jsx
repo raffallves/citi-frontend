@@ -1,8 +1,7 @@
 import './DropFileInput.css'
 import { useState, useRef } from 'react'
 
-export default function DropFileInput() {
-    const [fileList, setFileList] = useState([])
+export default function DropFileInput({ setFileList, fileList }) {
     const wrapperRef = useRef(null)
 
     const onDragEnter = () => wrapperRef.current.classList.add('dragover')
